@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://gongchangshiyi.github.io/</id>
     <title>张十一</title>
-    <updated>2019-07-30T11:09:11.960Z</updated>
+    <updated>2019-07-30T11:20:42.877Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://gongchangshiyi.github.io/"/>
     <link rel="self" href="https://gongchangshiyi.github.io//atom.xml"/>
@@ -11,35 +11,37 @@
     <icon>https://gongchangshiyi.github.io//favicon.ico</icon>
     <rights>All rights reserved 2019, 张十一</rights>
     <entry>
-        <title type="html"><![CDATA[Hello Gridea]]></title>
-        <id>https://gongchangshiyi.github.io//post/hello-gridea</id>
-        <link href="https://gongchangshiyi.github.io//post/hello-gridea">
+        <title type="html"><![CDATA[Hive 中的常用函数]]></title>
+        <id>https://gongchangshiyi.github.io//post/hive-zhong-de-chang-yong-han-shu</id>
+        <link href="https://gongchangshiyi.github.io//post/hive-zhong-de-chang-yong-han-shu">
         </link>
-        <updated>2018-12-11T16:00:00.000Z</updated>
-        <summary type="html"><![CDATA[<p>👏  欢迎使用 <strong>Gridea</strong> ！<br>
-✍️  <strong>Gridea</strong> 一个静态博客写作客户端。你可以用它来记录你的生活、心情、知识、笔记、创意... ...</p>
-]]></summary>
-        <content type="html"><![CDATA[<p>👏  欢迎使用 <strong>Gridea</strong> ！<br>
-✍️  <strong>Gridea</strong> 一个静态博客写作客户端。你可以用它来记录你的生活、心情、知识、笔记、创意... ...</p>
-<!-- more -->
-<p><a href="https://github.com/getgridea/gridea">Github</a><br>
-<a href="http://hvenotes.fehey.com/">Gridea 主页</a><br>
-<a href="http://fehey.com/">示例网站</a></p>
-<h2 id="特性">特性👇</h2>
-<p>📝  你可以使用最酷的 <strong>Markdown</strong> 语法，进行快速创作</p>
-<p>🌉  你可以给文章配上精美的封面图和在文章任意位置插入图片</p>
-<p>🏷️  你可以对文章进行标签分组</p>
-<p>📋  你可以自定义菜单，甚至可以创建外部链接菜单</p>
-<p>💻  你可以在 <strong>𝖶𝗂𝗇𝖽𝗈𝗐𝗌</strong> 或 <strong>𝖬𝖺𝖼𝖮𝖲</strong> 设备上使用此客户端</p>
-<p>🌎  你可以使用 <strong>𝖦𝗂𝗍𝗁𝗎𝖻 𝖯𝖺𝗀𝖾𝗌</strong> 或 <strong>Coding Pages</strong> 向世界展示，未来将支持更多平台</p>
-<p>💬  你可以进行简单的配置，接入 <a href="https://github.com/gitalk/gitalk">Gitalk</a> 或 <a href="https://github.com/SukkaW/DisqusJS">DisqusJS</a> 评论系统</p>
-<p>🇬🇧  你可以使用<strong>中文简体</strong>或<strong>英语</strong></p>
-<p>🌁  你可以任意使用应用内默认主题或任意第三方主题，强大的主题自定义能力</p>
-<p>🖥  你可以自定义源文件夹，利用 OneDrive、百度网盘、iCloud、Dropbox 等进行多设备同步</p>
-<p>🌱 当然 <strong>Gridea</strong> 还很年轻，有很多不足，但请相信，它会不停向前🏃</p>
-<p>未来，它一定会成为你离不开的伙伴</p>
-<p>尽情发挥你的才华吧！</p>
-<p>😘 Enjoy~</p>
+        <updated>2019-07-30T11:12:17.000Z</updated>
+        <content type="html"><![CDATA[<p><strong>函数</strong></p>
+<ul>
+<li>sum() 计算和</li>
+<li>avg() 计算平均数</li>
+<li>min() 最小值</li>
+<li>max() 最大值</li>
+<li>count() 计数</li>
+<li>abs() 绝对值</li>
+<li>distinct 去重</li>
+<li>fromunixtime(时间戳,时间格式) 将时间戳转为时间格式*</li>
+<li>unix_timestamp() 显示当前的时间戳</li>
+<li>unix_timestamp(时间) 将时间转换为时间戳<br>
+固定格式为yyyy-MM-dd HH:mm:ss</li>
+<li>unix_timestamp(时间,时间格式) 根据自定义的时间格式将时间转为时间戳</li>
+<li>case when 条件 then 结果1 when 条件 then 结果2 else 结果3 end [as] 结果表别名 根据条件在结果列输出指定值</li>
+<li>coalesce(判断列,返回值) 当判断列数据为null时,用返回值替换</li>
+<li>length() 字段数据的长度</li>
+<li>reverse() 反转数据</li>
+<li>concat(列1/字符串,列2/字符串) 将列值作为字符串拼接</li>
+<li>concat_ws(指定拼接符,列1,列2) 用指定拼接符拼接</li>
+<li>cast(列 as 数据类型) 转换数据类型</li>
+<li>parse_url 解析网站地址</li>
+<li>row_number() over(order by 排序列 asc/desc)<br>
+<strong>查询实例</strong><br>
+select count() from (select distinct job from emp) 别名; 查看emp表中job的数量</li>
+</ul>
 ]]></content>
     </entry>
 </feed>
